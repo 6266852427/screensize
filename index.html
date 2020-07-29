@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Javascript Get Screen Resolution and Browser Viewport Dimensions</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> 
+</head>
+<body>
+ <script>
+     function getResolution(){
+         document.write("<center>Your screen resolution is: <b>" + screen.width + "</b>px x <b>" + screen.height + "</b>px</center>");
+     }
+     function windowSize(){
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        document.write("<center>Screen Dimensions is Width: <b>" + w + "</b>px, Height: <b>" + h + "</b>px</center>");
+     }
+ </script> 
+ <div class="container">
+     <center><button class=" btn btn-primary mt-3" type="button" onclick="getResolution();">Get Resolution</button>
+     <br>
+     <button class="btn btn-success mt-3" type="button" onclick="windowSize();">Get Screen Dimesions</button>
+     </center>
+ </div>  
+</body>
+</html>
